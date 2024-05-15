@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>"Your site name"</title>
+</head>
+
+<body>
+    <main>
+        <!-----------NAVBAR--------->
+        <section id="home" class="bg-gradient-to-r from-[#FB8C1A] to-[#FCC300]">
+            <header
+                class="container relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
+                <a href="#" class="flex items-center whitespace-nowrap text-3xl font-bold text-white"> "Your site name" </a>
+                <input type="checkbox" class="peer hidden" id="navbar-open" />
+                <label class="absolute top-5 right-5 cursor-pointer lg:hidden" for="navbar-open">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <nav aria-label="Header Navigation"
+                    class="peer-checked:pt-8 peer-checked:max-h-80 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
+                    <ul
+                        class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0 font-medium">
+                        <li class="lg:mr-12"> <a href="#home"
+                                class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#1E266D] hover:text-gray-500">Home</a>
+                        </li>
+
+                        <li class="lg:mr-12"> <a href="#product"
+                                class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#1E266D] hover:text-gray-500">Products</a>
+                        </li>
+
+                        <li class="lg:mr-12"> <a href="#about"
+                                class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#1E266D] hover:text-gray-500">Company</a>
+                        </li>
+
+                        <li class="lg:mr-12"> <a href="#pricing"
+                                class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#1E266D] hover:text-gray-500">Pricing</a>
+                        </li>
+
+                        <li class="lg:mr-12"> <a href="#blog"
+                                class="inline-flex whitespace-nowrap border-b-2 border-transparent font-medium text-white transition-all duration-300 ease-in-out hover:border-b-[#1E266D] hover:text-gray-500">Blog</a>
+                        </li>
+                    </ul>
+                    <hr class="mt-4 w-full lg:hidden" />
+                    <div
+                        class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
+                        <a href="#" title=""
+                            class="whitespace-nowrap rounded-full px-5 py-3 font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 text-white hover:bg-yellow-900">
+                            Log in </a>
+
+                        <a href="#" title=""
+                            class="whitespace-nowrap rounded-full px-5 py-3 font-medium text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-yellow-900">Sign
+                            Up</a>
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+
+        <!-----------HERO-SECTION--------->
+        <section>
+            <img src="/Assets/mdn-hero.png" alt="">
+        </section>
+
+
+        <!-----------WHY-CHOOSE-US------------->
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="fade-right" data-aos-delay="500">
+                    <img class="object-cover object-center rounded" alt="hero" src="/Assets/about-img.png">
+                </div>
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" data-aos="fade-left" data-aos-delay="600">
+                    <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#FFA500]">
+                        WHY CHOOSE US?
+                    </h2>
+                    <p class="mb-8 leading-relaxed">We offer instant recharge of Airtime, Databundle, CableTV (DStv,GOtv
+                        & Startimes), Electricity Bill Payment and Airtime to Cash
+                    </p>
+                    <p class="mb-8 leading-relaxed rounded-md text-[#FFA500] p-3">
+                        We're Fast &#160; &#160; &#160; &#160; &#160; Automated Services<br>
+                        100% Secured &#160; &#160; &#160; &#160; &#160; We're Reliable <br>
+                        Always Online &#160; &#160; &#160; &#160; &#160; 24/7 Customer Support
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-----------WE-PROVIDE------------->
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center space-x-6">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-20 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" data-aos="fade-up-right" data-aos-delay="500">
+                    <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#FFA500]">
+                        WE PROVIDE AWESOME SERVICES
+                    </h2>
+                    <p class="mb-8 leading-relaxed">Certain things are hard 😓 but making payments shouldn't be one of them. "Your site name" helps you make payments for services you enjoy right from the comfort of your home or office. The experience of total convinience, fast service delivery and easy payment is just at your fingertips.
+                    </p>
+                </div>
+
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="fade-up-left" data-aos-delay="600">
+                    <img class="object-cover object-center rounded" alt="hero" src="/Assets/provide-img.png">
+                </div>
+            </div>
+        </section>
+
+        <!-----------BECOME-AN-AGENT------------->
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img class="object-cover object-center rounded" alt="hero" src="/Assets/agent-img.png">
+                </div>
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#FFA500]">
+                        WHO WE ARE
+                    </h2>
+                    <p class="mb-8 leading-relaxed">
+                        Join our network of outstanding entrepreneurs partnering with "Your site name" 'easy-payments' experience closer to your network and earn a commission for every transaction perform for your customers.
+                        <br><br>
+                        We offer our Refferrers the best referral program incentives to encourage entrepreneural and managerial skills acquisition; enhance growth and development and general empowerment among our students on campuses of higher learning and youths in diaspora. Finally, to promote technology via the use of ICT tools in our society. <br><br>
+
+                        <a href="#" title=""
+                        class="whitespace-nowrap rounded-md px-5 py-3 font-medium text-white bg-[#FFA500] transition-all duration-300">Get Started</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <div class="bg-[#FFFFFF]">
+        <!------INTEGRATE-OUR-API--------------->
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img class="object-cover object-center rounded" alt="hero" src="/Assets/api-img.png">
+                </div>
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#FFA500]">
+                        INTEGRATE OUR API
+                    </h2>
+                    <p class="mb-8 leading-relaxed">With our ready-to-use and developer friendly API, you can easily intergrate with your websites or app for FREE to start recieving payments in a breeze.
+                        <br><br>
+
+                        <a href="#" title=""
+                        class="whitespace-nowrap rounded-md px-5 py-3 font-medium text-white bg-[#FFA500] transition-all duration-300">API Documentation</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!---------EXCLUSIVE-SERVICES------------>
+        <section class="container p-6 mx-auto space-y-3 dark:bg-gray-800 dark:text-white mt-24">
+            <h4 class="text-xl font-bold text-[#FFA500] capitalize dark:text-gray-300 md:text-3xl text-center">Our
+                Exclusive Services</h4>
+            <div class="flex items-center justify-center">
+                <div class="grid gap-8 my-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                    <!-- cards -->
+                    <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="/">
+                            <div
+                                class="object-cover object-center w-full h-56 mx-auto rounded-lg bg-[#F3F4F6] dark:border-gray-600">
+                                <div class="py-8 px-4">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <h5 class="text-lg font-bold text-[#221668] py-4">Buy Data</h5>
+                                    <span class="mt-1 text-base dark:text-gray-400">Start enjoying this very low rates
+                                        Data plan for your internet browsing data bundle</span> <br>
+                                    <small>ORDER NOW</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="/">
+                            <div
+                                class="object-cover object-center w-full h-56 mx-auto rounded-lg bg-[#F3F4F6] dark:border-gray-600">
+                                <div class="py-8 px-4">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <h5 class="text-lg font-bold text-[#221668] py-4">Airtime Recharge (VTU)</h5>
+                                    <span class="mt-1 text-base dark:text-gray-400">Start enjoying this very low rates
+                                        Data plan for your internet browsing data bundle</span> <br>
+                                    <small>ORDER NOW</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="/">
+                            <div
+                                class="object-cover object-center w-full h-56 mx-auto rounded-lg bg-[#F3F4F6] dark:border-gray-600">
+                                <div class="py-8 px-4">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                    <h5 class="text-lg font-bold text-[#221668] py-4">Utility Payments</h5>
+                                    <span class="mt-1 text-base dark:text-gray-400">Start enjoying this very low rates
+                                        Data plan for your internet browsing data bundle</span> <br>
+                                    <small>ORDER NOW</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="/">
+                            <div
+                                class="object-cover object-center w-full h-56 mx-auto rounded-lg bg-[#F3F4F6] dark:border-gray-600">
+                                <div class="py-8 px-4">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <h5 class="text-lg font-bold text-[#221668] py-4">Cable Subscription</h5>
+                                    <span class="mt-1 text-base dark:text-gray-400">Start enjoying this very low rates
+                                        Data plan for your internet browsing data bundle</span> <br>
+                                    <small>ORDER NOW</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="/">
+                            <div
+                                class="object-cover object-center w-full h-56 mx-auto rounded-lg bg-[#F3F4F6] dark:border-gray-600">
+                                <div class="py-8 px-4">
+                                    <i class="fa-solid fa-envelope-open"></i>
+                                    <h5 class="text-lg font-bold text-[#221668] py-4">Bulk SMS</h5>
+                                    <span class="mt-1 text-base dark:text-gray-400">Start enjoying this very low rates
+                                        Data plan for your internet browsing data bundle</span> <br>
+                                    <small>ORDER NOW</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w-full max-w-xs text-center" data-aos="fade-up" data-aos-duration="3000">
+                        <a href="/">
+                            <div
+                                class="object-cover object-center w-full h-56 mx-auto rounded-lg bg-[#F3F4F6] dark:border-gray-600">
+                                <div class="py-8 px-4">
+                                    <i class="fa-solid fa-money-check-dollar"></i>
+                                    <h5 class="text-lg font-bold text-[#221668] py-4">Airtime to Cash</h5>
+                                    <span class="mt-1 text-base dark:text-gray-400">Start enjoying this very low rates
+                                        Data plan for your internet browsing data bundle</span> <br>
+                                    <small>ORDER NOW</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-----------OUR-PARTNERS--------->
+        <section>
+            <div class="container px-5 py-20 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h2 class="sm:text-3xl text-2xl font-extrabold title-font mb-4 text-[#FFA500]">Our Partners</h2>
+                </div>
+                <div>
+                    <div class="slider">
+                        <div class="slider-track">
+                            <div class="slide">
+                                <img src="/Assets/box-pic1.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic2.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic3.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic4.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic5.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic6.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic7.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic8.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic9.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic10.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic11.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic12.png">
+                            </div>
+
+                            <!-- repeat -->
+                            <div class="slide">
+                                <img src="/Assets/box-pic1.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic2.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic3.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic4.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic5.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic6.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic7.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic8.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic9.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic10.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic11.png">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/box-pic12.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------PRICING-SECTION---------->
+        <section class="text-gray-600 body-font">
+            <div class="flex flex-col text-center w-full">
+                <h2 class="sm:text-3xl text-2xl font-extrabold text-[#FFA500] mb-20">Data Price List</h2>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                    <div
+                        class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col items-center justify-center overflow-hidden">
+                        <img src="/Assets/price-airtel.png" alt="">
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1GB &#8210; ₦220 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+                        </p>
+                        <button
+                            class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-500 rounded">Airtel
+                            Data
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                    <div
+                        class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col items-center justify-center overflow-hidden">
+                        <img src="/Assets/price-glo.png" alt="">
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            1GB &#8210; ₦220 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFa500] mb-2">
+                            5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+                        </p>
+                        <button
+                            class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-500 rounded">Glo
+                            Data
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                    <div
+                        class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col   items-center justify-center overflow-hidden">
+                        <img src="/Assets/price-mtn.png" alt="">
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1GB &#8210; ₦220 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+                        </p>
+                        <button
+                            class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-yellow-500 rounded">Mtn
+                            Data
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                    <div
+                        class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col   items-center justify-center overflow-hidden">
+                        <img src="/Assets/price-9mb.png" alt="">
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            100.0MB &#8210; ₦27 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            300.0MB &#8210; ₦65 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            500.0MB &#8210; ₦110 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1GB &#8210; ₦220 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1.2GB &#8210; ₦440 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            1.5GB &#8210; ₦900 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            3BG &#8210; ₦1080 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            4.5GB &#8210; ₦1100 &#8210; 7 days(weekly)
+                        </p>
+                        <p class="flex items-center text-[#FFA500] mb-2">
+                            5GB &#8210; ₦1800 &#8210; 7 days(weekly)
+                        </p>
+                        <button
+                            class="flex items-center mt-auto text-white justify-center bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-900 rounded">9mobile
+                            Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------TESTIMONIALS------------ -->
+        <section class="text-white body-font">
+            <div class="container px-5 py-12 mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="sm:text-3xl text-2xl font-extrabold text-[#FFA500] mb-4">User Testimonials</h2>
+                </div>
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto flex flex-col items-center sm:flex-row">
+                    <img src="/Assets/testimonial-ellipse.png" class="rounded-full w-24 h-24 mb-4 sm:mr-4 sm:mb-0" alt="">
+                    <div class="text-[#64607C] text-center sm:text-left">
+                        <p class="leading-relaxed text-lg"> I was looking for an easy and intuitive way to manage my subscriptions, a cost efficient, fast and reliable service. "Your site name" has met all my expectations.</p>
+                        <div class="">
+                            <span class="inline-block h-1 w-10 rounded bg-[#FFA500]"></span>
+                        </div>
+                        <h2 class="font-medium title-font tracking-wider text-sm">Devin M. Kolin</h2>
+                        <p class="text-sm">CEO</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!----------------FAQs----------------->
+    <section class="text-gray-600 body-font mt-32 mb-24">
+        <div class="flex flex-col text-center w-full">
+          <h2 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-[#FFA500]">FREQUENTLY ASKED QUESTIONS</h2>
+        </div>
+        <div class="space-y-2 m-6">
+          <details class="group [&_summary::-webkit-details-marker]:hidden" open data-aos="fade-up" data-aos-delay="300">
+            <summary
+              class="flex cursor-pointer items-center justify-between gap-1 rounded-lg bg-gray-300 p-4 text-gray-900">
+              <h2 class="font-medium">How can I buy data?</h2>
+              <svg
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+        
+            <p class="mt-4 px-4 leading-relaxed text-gray-700">
+              STEP 1: Fund your wallet. <br>
+              STEP 2: Fill the data order form. <br>
+              STEP 3: Wait for 1-15 minutes, the recipient will receive notification(s) of data recharge(Except for 9mobile(SME), which should be confirmed with its balance code)
+            </p>
+          </details>
+        
+          <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="500">
+            <summary
+              class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+            >
+              <h2 class="font-medium">What are the code for checking data balance?</h2>
+        
+              <svg
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+        
+            <p class="mt-4 px-4 leading-relaxed text-gray-700">
+              Once you can access your dashboard, you have successfully registered. (Welcome On Board)
+            </p>
+          </details>
+  
+          <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="700">
+            <summary
+              class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+            >
+              <h2 class="font-medium">Minimum amount to fund my wallet?</h2>
+        
+              <svg
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+        
+            <p class="mt-4 px-4 leading-relaxed text-gray-700">
+              Absolutely 100 percent secure! You can access your transaction history anytime, anyday. 
+            </p>
+          </details>
+  
+          <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="900">
+            <summary
+              class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+            >
+              <h2 class="font-medium">When can i access my account?</h2>
+        
+              <svg
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+        
+            <p class="mt-4 px-4 leading-relaxed text-gray-700">Our Customer Care Support Team is 24/7 available to attend to you, kindly contact us.
+            </p>
+          </details>
+  
+          <details class="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay="900">
+            <summary
+              class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+            >
+              <h2 class="font-medium">Can i get a website like this?</h2>
+        
+              <svg
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+        
+            <p class="mt-4 px-4 leading-relaxed text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi eveniet doloremque sequi quo illo earum possimus repellendus atque accusantium ipsum suscipit maxime eius optio, maiores totam eligendi, animi fugiat?
+            </p>
+          </details>
+        </div>
+      </section>  
+
+      <!--------FOOTER-------->
+  <footer class="bg-[#FFA500]">
+      <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto pt-10">
+        <div class="p-5">
+          <h3 class="font-bold text-xl text-white">"Your site name"</h3>
+        </div>
+        <div class="p-5 text-white">
+          <div class="text-sm uppercase font-bold">Resources</div>
+          <a class="my-3 block" href="/#">Documentation <span class="text-xs p-1"></span></a><a class="my-3 block"
+            href="/#">Tutorials <span class="text-xs p-1"></span></a><a class="my-3 block" href="/#">Support <span
+              class="text-xs p-1">New</span></a>
+        </div>
+        <div class="p-5 text-white">
+          <div class="text-sm uppercase font-bold">Support</div>
+          <a class="my-3 block" href="/#">Help Center <span class="text-xs p-1"></span></a><a class="my-3 block"
+            href="/#">Privacy Policy <span class="text-xs p-1"></span></a><a class="my-3 block" href="/#">Conditions <span
+              class="text-xs p-1"></span></a>
+        </div>
+        <div class="p-5 text-white">
+          <div class="text-sm uppercase font-bold">Contact us</div>
+          <a class="my-3 block" href="/#">XXX XXXX, Lagos, Nigeria
+            <span class="text-xs p-1"></span></a>
+  
+          <a class="my-3 block" href="/#">contact@company.com
+            <span class=" text-xs p-1"></span></a>
+        </div>
+      </div>
+  
+    <div class="pt-2">
+      <div class="flex pb-5 px-3 m-auto pt-5 text-[#5c5c5c] text-sm flex-col
+          max-w-screen-lg items-center border-t-2">
+        <div class="my-2">© Copyright 2020. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
